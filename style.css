@@ -27,6 +27,37 @@ aside.game_left_side {
   width: 347px;
   background: #fff;
   min-height: 100vh; }
+  aside.game_left_side .cheleng {
+    text-align: center;
+    margin-top: 20px; }
+    aside.game_left_side .cheleng a {
+      color: #000;
+      background: #FF8888;
+      border-radius: 50px;
+      border: 1px solid #707070;
+      padding: 4px  20px 6px;
+      font-size: 12px;
+      display: inline-block;
+      position: relative; }
+      aside.game_left_side .cheleng a:hover .bolt {
+        color: #FFB300; }
+      aside.game_left_side .cheleng a .bolt {
+        position: absolute;
+        background-color: #DAF9FE;
+        border: 2px solid #073BA2;
+        border-radius: 50px;
+        width: 26px;
+        color: #0094F6;
+        bottom: -30px;
+        height: 26px;
+        text-align: center;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        left: -9px;
+        top: -9px; }
   aside.game_left_side .person_info {
     margin-top: 50px; }
     aside.game_left_side .person_info .avatar {
@@ -149,19 +180,23 @@ aside.game_left_side {
         background: #55D95A;
         border: 1px solid #707070;
         border-radius: 100px;
-        margin-right: 10px; }
+        margin-right: 10px;
+        overflow: hidden; }
+        aside.game_left_side .game_tabs .tab-content .avatar img {
+          width: 100%; }
         aside.game_left_side .game_tabs .tab-content .avatar div {
           width: 45px;
           height: 45px;
           border: 1px solid #707070;
           border-radius: 100px;
-          background: #AEE3F3; }
+          background: #AEE3F3;
+          overflow: hidden; }
           aside.game_left_side .game_tabs .tab-content .avatar div i {
             line-height: 45px;
             font-size: 25px;
             color: #14539B; }
       aside.game_left_side .game_tabs .tab-content .saarch_up_stuent {
-        margin-top: 40px; }
+        margin-top: 22px; }
         aside.game_left_side .game_tabs .tab-content .saarch_up_stuent input {
           color: #707070;
           background: #F1E3B2;
@@ -231,8 +266,8 @@ aside.game_left_side {
   background-position: center; }
 
 .gameer_reitings {
-  margin-top: 20px;
-  margin-bottom: 67px; }
+  margin-top: 2px;
+  margin-bottom: 34px; }
 
 #content {
   position: relative;
@@ -250,6 +285,7 @@ aside.game_left_side {
     position: absolute;
     left: 50%;
     width: 43%;
+    min-width: 340px;
     top: 50%;
     transform: translate(-50%, -50%); }
     #content .search_gamer_block .players {
@@ -262,7 +298,8 @@ aside.game_left_side {
         margin-top: 7px;
         margin-left: 7px; }
       #content .search_gamer_block .players div {
-        width: 160px;
+        width: 31%;
+        min-width: 64px;
         height: 64px;
         border: 1px solid #707070;
         border-radius: 5px;
@@ -367,7 +404,10 @@ aside.game_left_side {
       background: #DAF9FE;
       font-size: 12px;
       margin-left: 12px;
-      border: 2px solid #073BA2; }
+      border: 2px solid #073BA2;
+      transition: 0.3; }
+      #content .search_gamer_block .search_box .bolt:hover {
+        color: #ffb300; }
 
 /*
 =====================================
@@ -376,6 +416,7 @@ aside.game_left_side {
   width: 70%;
   margin: auto;
   position: relative;
+  min-width: 340px;
   z-index: 3;
   top: 40%;
   transform: translateY(-50%); }
@@ -406,8 +447,8 @@ aside.game_left_side {
     background: #fff;
     border-radius: 500px; }
   #content .start_game .gamerVS .avatar {
-    width: 176px;
-    height: 176px;
+    width: 168px;
+    height: 168px;
     border-radius: 400px;
     background: #B8FFA2;
     border: 1px solid #707070;
@@ -553,7 +594,8 @@ aside.game_left_side {
   transform: translate(-50%, -50%); }
   .end_game .win {
     font-size: 30px;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 3vw; }
     .end_game .win span:first-child {
       display: none; }
   .end_game .win.lost span:last-child {
@@ -609,12 +651,12 @@ aside.game_left_side {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -44%);
   width: 400px; }
   #content .Previous_questions .qestion {
     text-align: center;
-    margin-top: 30px;
-    font-size: 18px;
+    margin-top: 16px;
+    font-size: 16px;
     color: #fff;
     padding-left: 10px;
     padding-right: 10px;
@@ -674,7 +716,7 @@ aside.game_left_side {
       transform: unset; }
     #content .Previous_questions .Previous_question_block .ansvers_box {
       width: 217px;
-      height: 60px;
+      height: 71px;
       color: #fff;
       margin: auto;
       margin-bottom: 12px;
@@ -701,7 +743,9 @@ aside.game_left_side {
   #content .Previous_questions .question_caunt {
     color: #fff; }
   #content .Previous_questions .btn_group {
-    font-size: 16px; }
+    font-size: 16px;
+    margin-top: 1vw;
+    margin-bottom: 6vw; }
     #content .Previous_questions .btn_group a {
       color: #fff;
       padding: 7px 3px;
@@ -758,6 +802,8 @@ aside.game_left_side {
 #sidebarCollapse {
   width: 40px;
   height: 40px;
+  position: relative;
+  z-index: 4;
   background: #f5f5f5;
   transform: translate(-30px, -16px); }
 
@@ -813,6 +859,75 @@ aside.game_left_side {
     opacity: 0; }
 
   #sidebarCollapse.active span:last-of-type {
-    transform: rotate(-45deg) translate(1px, -1px); } }
+    transform: rotate(-45deg) translate(1px, -1px); }
+
+  aside.game_left_side .nav-tabs .nav-link {
+    font-size: 9px !important;
+    padding: 2px; } }
+@media only screen and (max-width: 561px) {
+  .question_page .answer {
+    width: 169px;
+    height: 55px;
+    font-size: 13px;
+    line-height: 14px; }
+
+  .question_page .question_block {
+    font-size: 18px;
+    margin-top: 5vw; }
+
+  .question_page {
+    margin-left: -15px;
+    margin-right: -15px; }
+
+  .end_game .btn_group a {
+    font-size: 13px; }
+
+  .end_game .VStiemer .name {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px; }
+
+  .end_game .VStiemer .point2.green {
+    font-size: 26px; }
+
+  .end_game .VStiemer .point2.red {
+    font-size: 26px; }
+
+  .end_game .VStiemer .timer img {
+    margin-left: 0;
+    margin-right: 0; }
+
+  .end_game .btn_group a {
+    margin: 3px;
+    text-align: center; }
+
+  .end_game .btn_group {
+    margin-top: 18vw; }
+
+  #content .Previous_questions .Previous_question_block {
+    width: 280px;
+    padding-bottom: 15px; }
+
+  #content .Previous_questions .Previous_question_block .next {
+    right: -55px;
+    font-size: 70px; }
+
+  #content .Previous_questions .Previous_question_block .previous {
+    left: -22px;
+    font-size: 70px; }
+
+  #content .Previous_questions .btn_group {
+    margin-bottom: 5vw; }
+
+  #sidebar {
+    margin-left: -315px;
+    min-width: 315px;
+    max-width: 315px; } }
+@media only screen and (max-width: 400px) {
+  .question_page .answer {
+    width: 150px;
+    height: 49px;
+    line-height: 14px;
+    font-size: 13px; } }
 
 /*# sourceMappingURL=style.css.map */
