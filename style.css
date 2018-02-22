@@ -28,12 +28,12 @@ aside.game_left_side {
   background: #fff;
   min-height: 100vh; }
   aside.game_left_side .person_info {
-    margin-top: 74px; }
+    margin-top: 50px; }
     aside.game_left_side .person_info .avatar {
       width: 83px;
       height: 83px;
       border-radius: 500px;
-      border: 8px solid #6052E2;
+      border: 6px solid #6052E2;
       overflow: hidden; }
       aside.game_left_side .person_info .avatar img {
         width: 100%;
@@ -42,11 +42,13 @@ aside.game_left_side {
       font-size: 17px;
       color: #707070;
       margin-bottom: 3px;
-      text-align: center; }
+      text-align: center;
+      font-family: 'Conv_BPG DejaVu Sans'; }
     aside.game_left_side .person_info .point {
       text-align: center;
       font-size: 17px;
-      color: #707070; }
+      color: #707070;
+      font-family: 'Conv_BPG DejaVu Sans'; }
     aside.game_left_side .person_info .blance {
       text-align: center;
       font-size: 12px;
@@ -61,7 +63,8 @@ aside.game_left_side {
     color: #707070; }
     aside.game_left_side .energi_point i {
       font-size: 29px;
-      color: #FFB300; }
+      color: #FFB300;
+      margin-right: 6px; }
   aside.game_left_side .chart span {
     display: inline-block;
     width: 39px;
@@ -181,12 +184,19 @@ aside.game_left_side {
           border-top-right-radius: 10px;
           border-bottom-right-radius: 10px;
           background: #F1E3B2; }
+          aside.game_left_side .game_tabs .tab-content .saarch_up_stuent button.alternativ {
+            border-left: 1px solid #707070;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px; }
+            aside.game_left_side .game_tabs .tab-content .saarch_up_stuent button.alternativ i {
+              padding-left: 7px; }
       aside.game_left_side .game_tabs .tab-content .gamer {
         margin-top: 40px;
         background-color: #bbe2ff;
         position: relative;
         width: 54px;
-        padding-top: 30px; }
+        padding-top: 30px;
+        font-size: 10px; }
         aside.game_left_side .game_tabs .tab-content .gamer .avatar {
           position: absolute;
           left: 50%;
@@ -539,7 +549,7 @@ aside.game_left_side {
   position: relative;
   max-width: 600px;
   left: 50%;
-  top: 20%;
+  top: 33%;
   transform: translate(-50%, -50%); }
   .end_game .win {
     font-size: 30px;
@@ -578,6 +588,130 @@ aside.game_left_side {
   .end_game .VStiemer .point2.green {
     color: #2DCC00;
     font-size: 36px; }
+  .end_game .btn_group {
+    margin-top: 9vw; }
+    .end_game .btn_group a {
+      font-size: 16px;
+      color: #fff;
+      padding: 5px 3px;
+      border-radius: 5px;
+      font-family: 'Conv_DejaVuSans';
+      font-weight: normal; }
+      .end_game .btn_group a:first-child {
+        background: #D05CE6; }
+      .end_game .btn_group a:nth-child(2) {
+        background: #D5B343; }
+      .end_game .btn_group a:last-child {
+        background: #409FFF; }
+
+/* Previous_questions  */
+#content .Previous_questions {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; }
+  #content .Previous_questions .qestion {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    font-family: 'Conv_BPG DejaVu Sans'; }
+  #content .Previous_questions .Timer_line {
+    height: 7px; }
+  #content .Previous_questions .Previous_question_block {
+    background: rgba(250, 250, 250, 0.52);
+    width: 320px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: relative; }
+    #content .Previous_questions .Previous_question_block .previous {
+      position: absolute;
+      left: -10%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 90px;
+      color: rgba(250, 250, 250, 0.88); }
+    #content .Previous_questions .Previous_question_block .next {
+      position: absolute;
+      right: -23%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 90px;
+      color: rgba(250, 250, 250, 0.88); }
+    #content .Previous_questions .Previous_question_block .outVS {
+      padding-left: 15px;
+      padding-right: 15px; }
+      #content .Previous_questions .Previous_question_block .outVS .outline {
+        width: 43px;
+        height: 43px;
+        border: 1px solid #707070; }
+        #content .Previous_questions .Previous_question_block .outVS .outline .star {
+          position: absolute;
+          width: 10px;
+          transform: rotateZ(-22deg);
+          height: 10px; }
+          #content .Previous_questions .Previous_question_block .outVS .outline .star .point {
+            font-size: 8px; }
+      #content .Previous_questions .Previous_question_block .outVS .avatar {
+        width: 37px;
+        height: 37px;
+        border: 1px solid #707070; }
+        #content .Previous_questions .Previous_question_block .outVS .avatar i {
+          font-size: 20px; }
+      #content .Previous_questions .Previous_question_block .outVS .name {
+        color: #fff;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 12px;
+        margin-bottom: 5px; }
+    #content .Previous_questions .Previous_question_block .timer {
+      font-size: 14px;
+      transform: unset; }
+    #content .Previous_questions .Previous_question_block .ansvers_box {
+      width: 217px;
+      height: 60px;
+      color: #fff;
+      margin: auto;
+      margin-bottom: 12px;
+      background: #B2B2B2;
+      border: 1px solid #707070;
+      border-radius: 5px; }
+      #content .Previous_questions .Previous_question_block .ansvers_box span {
+        padding-left: 15px;
+        padding-right: 14px;
+        font-size: 13px;
+        text-align: center; }
+      #content .Previous_questions .Previous_question_block .ansvers_box.corect {
+        background: url(images/corect.svg);
+        background-position: center;
+        background-size: 100%;
+        border: none;
+        border-radius: unset; }
+      #content .Previous_questions .Previous_question_block .ansvers_box.wrong {
+        background: url(images/wrong.svg);
+        background-position: center;
+        background-size: 100%;
+        border: none;
+        border-radius: unset; }
+  #content .Previous_questions .question_caunt {
+    color: #fff; }
+  #content .Previous_questions .btn_group {
+    font-size: 16px; }
+    #content .Previous_questions .btn_group a {
+      color: #fff;
+      padding: 7px 3px;
+      border: 1px solid #707070;
+      border-radius: 6px;
+      display: inline-block; }
+      #content .Previous_questions .btn_group a:first-child {
+        background: #D05CE6; }
+      #content .Previous_questions .btn_group a:last-child {
+        background: #409FFF; }
 
 /*
     DEMO STYLE
@@ -624,7 +758,8 @@ aside.game_left_side {
 #sidebarCollapse {
   width: 40px;
   height: 40px;
-  background: #f5f5f5; }
+  background: #f5f5f5;
+  transform: translate(-30px, -16px); }
 
 #sidebarCollapse span {
   width: 80%;
