@@ -348,7 +348,7 @@
                            
                        
                        <div class="VStiemer ">
-                              <div class="Timer_line">
+                              <div style=" " id="timer_line" class="Timer_line">
                                     
                               </div>
                               <div class="outVS d-flex align-items-center justify-content-between">
@@ -375,7 +375,7 @@
                           
 
                           <div class="timer">
-                              <i class="fas fa-stopwatch"></i> <span class="timer_time">20</span>
+                              <i class="fas fa-stopwatch"></i> <span id="game_timer_time" class="timer_time">10</span>
                           </div>
                           <div class="outVS d-flex align-items-center">
                               <div class="VS2 d-flex align-items-center ">
@@ -436,6 +436,25 @@
                      </div>
 
                    </div>
+                   <script type="text/javascript">
+                     
+                     var timeleft = 10;
+                     var transitonFor=10;
+var downloadTimer = setInterval(function(){
+   
+  document.getElementById("game_timer_time").innerHTML =timeleft;
+  document.getElementById("timer_line").style.width=0+'%';
+  document.getElementById("timer_line").style.transition = transitonFor+'s';
+  document.getElementById("timer_line").style.transitionTimingFunction='linear'
+
+  if(timeleft <= 0){
+    clearInterval(downloadTimer)
+  }
+timeleft--;
+  
+
+},1000);
+                   </script>
 
 
 

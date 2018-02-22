@@ -19,7 +19,12 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+<script type="text/javascript">
 
+            function gogo(){
+               $('.map').addClass('map_animate')
+            }
+</script>
 
 
         <div class="wrapper">
@@ -84,7 +89,7 @@
     	 <div>
     	<!--  <input class="formClear" value="+ 3 მოსწავლე" type="#" name=""><button><i class="fas fa-search"></i></button> -->
 
-        <button class="alternativ">  + 3 მოსწავლე <i class="fas fa-random"></i> </button>
+        <button onclick="gogo()" class="alternativ">  + 3 მოსწავლე <i class="fas fa-random"></i> </button>
     	</div>
     </div>
     
@@ -104,7 +109,7 @@
     	 	 	<div class="point">
     	 	 		<span>1000</span> qula
     	 	 	</div>
-    	 	 	<div class="bolt">
+    	 	 	<div class="bolt" onclick="gogo()">
     	 	 		<i class="fas fa-bolt"></i>
     	 	 	</div>
     	 	 </div>
@@ -142,7 +147,7 @@
     	 	 	<div class="point">
     	 	 		<span>1000</span> qula
     	 	 	</div>
-    	 	 	<div class="bolt d-flex align-items-center justify-content-center">
+    	 	 	<div onclick="gogo()" class="bolt d-flex align-items-center justify-content-center">
     	 	 		<i class="fas fa-bolt"></i>
     	 	 	</div>
     	 	 </div>
@@ -157,12 +162,12 @@
     	 <div>
     	 <!-- <input class="formClear" value="+ 3 მოსწავლე" type="#" name=""><button><i class="fas fa-search"></i></button> -->
       
-      <button class="alternativ">  + 3 მოსწავლე <i class="fas fa-random"></i> </button>
+      <button onclick="gogo()" class="alternativ">  + 3 მოსწავლე <i class="fas fa-random"></i> </button>
     	</div>
     </div>
 
     <div class="cheleng">
-            <a href="#">გამოიწვიე მეგობარი
+            <a id="chelengfrend" href="#">გამოიწვიე მეგობარი
                   <div class="bolt d-flex align-items-center justify-content-center">
             <i class="fas fa-bolt"></i>
           </div>
@@ -188,7 +193,7 @@
 
             <!-- Page Content Holder -->
             <div id="content">
-
+   
                 <div class="">
                     <div class="container-fluid">
 
@@ -208,9 +213,12 @@
               <div class="map">
                   <img src="images/map23.png">
               </div>
+              <div class="blar hidden">
+     
+   </div>
               <!-- search gamer  -->
 
-              <!--    <div class="search_gamer_block">
+                 <div class="search_gamer_block hidden">
                       <div class="players">
                            <div class="left d-inline-block ">
                            <span> <img src="images/img_avatar.png"> </span>
@@ -235,7 +243,7 @@
                                            <span class="number"> N:<span>6</span> </span> 
                                            სალომე <sapn class='pint'> 1000 </sapn> ქულა
                                         </div>
-                                        <a href="" class="bolt d-flex justify-content-center align-items-center">
+                                        <a href="" onclick=" gogo()" class="bolt d-flex justify-content-center align-items-center">
                                               <i class="fas fa-bolt"></i>
                                         </a>
 
@@ -249,7 +257,7 @@
                                            <span class="number"> N:<span>6</span> </span> 
                                            სალომე <sapn class='pint'> 1000 </sapn> ქულა
                                         </div>
-                                        <a href="" class="bolt d-flex justify-content-center align-items-center">
+                                        <a href=""  class="bolt d-flex justify-content-center align-items-center">
 
                                              <i class="fas fa-bolt"></i>
                                         </a>
@@ -286,7 +294,7 @@
                             </div>
 
                        </div> 
-                       </div> -->
+                       </div>
 
                        <!--============== end search gamers=============== -->
 
@@ -637,7 +645,7 @@
         </div>
 
 
-
+    
 
 
         <!-- jQuery CDN -->
@@ -646,7 +654,25 @@
          <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  -->
          <script type="text/javascript">
+
+
              $(document).ready(function () {
+            // serchi
+            $('#chelengfrend').click(function(){
+
+                $('.search_gamer_block').toggleClass('hidden')
+                $('.blar').toggleClass('hidden')
+            })
+            $('.blar').click(function(){
+                $(this).toggleClass('hidden');
+                $('.search_gamer_block').toggleClass('hidden');
+
+            });
+
+
+
+
+
                  $('#sidebarCollapse').on('click', function () {
                      $('#sidebar').toggleClass('active');
                      $(this).toggleClass('active');
