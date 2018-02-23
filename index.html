@@ -20,9 +20,26 @@
     </head>
     <body>
 <script type="text/javascript">
-
+            var aniamtintim;
             function gogo(){
-               $('.map').addClass('map_animate')
+               $('.map').addClass('map_animate');
+               $('.map').removeClass('hidden');
+               $('.gmaer1').removeClass('hidden');
+               $('.gmaer2').removeClass('hidden');
+               $('.start_game').addClass('hidden');   
+               $('.search_gamer_block').addClass('hidden');
+               $('.blar').addClass('hidden');
+
+
+                aniamtintim =  setTimeout(function(){
+                $('.map').removeClass('map_animate');
+               $('.gmaer1').addClass('hidden');
+               $('.gmaer2').addClass('hidden');
+               $('.map').addClass('hidden');
+               $('.start_game').removeClass('hidden');
+
+                  
+                 }, 6800);
             }
 </script>
 
@@ -211,7 +228,20 @@
 
                 
               <div class="map">
-                  <img src="images/map23.png">
+                  <img class="map" src="images/map23.png">
+                  <div class="gmaer1 hidden">
+                     <div class="avatar">
+                        <img src="images/img_avatar.png">
+                     </div>
+                     <img src="images/Group8.svg">
+                  </div>
+                  <div class="gmaer2 hidden">
+                     <div class="avatar">
+                        <img src="images/img_avatar.png">
+                     </div>
+                     <img src="images/Group9.svg">
+                    
+                  </div>
               </div>
               <div class="blar hidden">
      
@@ -308,7 +338,7 @@
 
                        <!-- ====================start game=================== -->
 
-                      <!--  <div class="start_game">
+                       <div class="start_game hidden">
                               <div class="gamerVSgamer d-flex align-items-center  justify-content-between ">
                                    <div class="gamerVS  text-center ">
                                      <div class="outline d-flex align-items-center justify-content-center">
@@ -361,16 +391,15 @@
                                  <button  class="start_btn btn">დაწყება</button>
                                   
                               </div>
-                       </div> -->
+                       </div>
                        <!--================= end start game ===============-->
 
 
-
-                       <!-- <div class="question_page">
+ <div class="question_page hidden">
                            
                        
                        <div class="VStiemer ">
-                              <div class="Timer_line">
+                              <div style=" " id="timer_line" class="Timer_line">
                                     
                               </div>
                               <div class="outVS d-flex align-items-center justify-content-between">
@@ -397,7 +426,7 @@
                           
 
                           <div class="timer">
-                              <i class="fas fa-stopwatch"></i> <span class="timer_time">20</span>
+                              <i class="fas fa-stopwatch"></i> <span id="game_timer_time" class="timer_time">10</span>
                           </div>
                           <div class="outVS d-flex align-items-center">
                               <div class="VS2 d-flex align-items-center ">
@@ -457,8 +486,7 @@
 
                      </div>
 
-                   </div> -->
-
+                   </div>
 
 
 
@@ -661,13 +689,44 @@
             $('#chelengfrend').click(function(){
 
                 $('.search_gamer_block').toggleClass('hidden')
-                $('.blar').toggleClass('hidden')
+                $('.blar').toggleClass('hidden');
+                $('.start_game').addClass('hidden');
+                $('.gmaer1').addClass('hidden');
+                $('.gmaer2').addClass('hidden');
+                $('.map').removeClass('map_animate');
+                $('.map').removeClass('hidden');
+                 clearTimeout(aniamtintim);
+                
             })
             $('.blar').click(function(){
                 $(this).toggleClass('hidden');
                 $('.search_gamer_block').toggleClass('hidden');
 
             });
+
+            $('.start_btn').click(function(){
+                   
+                $('.start_game').addClass('hidden');
+                $('.question_page').removeClass('hidden');
+
+
+                 var timeleft = 10;
+                     var transitonFor=10;
+var downloadTimer = setInterval(function(){
+   
+  document.getElementById("game_timer_time").innerHTML =timeleft;
+  document.getElementById("timer_line").style.width=0+'%';
+  document.getElementById("timer_line").style.transition = transitonFor+'s';
+  document.getElementById("timer_line").style.transitionTimingFunction='linear'
+
+  if(timeleft <= 0){
+    clearInterval(downloadTimer)
+  }
+timeleft--;
+  
+
+},1000);
+            })
 
 
 
