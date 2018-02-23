@@ -955,7 +955,22 @@ aside.game_left_side {
 
   aside.game_left_side .nav-tabs .nav-link {
     font-size: 9px !important;
-    padding: 2px; } }
+    padding: 2px; }
+
+  #content .start_game {
+    width: 100%; }
+
+  #content .start_game .gamerVS .avatar {
+    width: 120px;
+    height: 120px; }
+
+  #content .start_game .gamerVS .outline {
+    width: 128px;
+    height: 128px; }
+
+  #content .start_game .gamerVS .name {
+    color: #fff;
+    font-size: 29px; } }
 @media only screen and (max-width: 561px) {
   .question_page .answer {
     width: 169px;
