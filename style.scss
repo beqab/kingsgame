@@ -1,6 +1,7 @@
 *{
 	margin: 0px;
 	padding: 0px;
+  font-family: 'Conv_DejaVuSans';
 }
 a:hover{
   text-decoration: none;
@@ -46,6 +47,7 @@ input:focus, button:focus{
           font-size: 12px;
           display: inline-block;
           position: relative;
+           font-family: 'Conv_DejaVuSans';
 
            &:hover .bolt{
                 color: #FFB300;
@@ -87,7 +89,7 @@ input:focus, button:focus{
    	  }
    }
       .name{
-      font-size: 17px;
+      font-size: 14px;
       color: #707070;
       margin-bottom: 3px;
       text-align: center;
@@ -95,14 +97,16 @@ input:focus, button:focus{
       }
       .point{
       	text-align: center;
-      font-size: 17px;
+      font-size: 13px;
       color: #707070;
       font-family: 'Conv_BPG DejaVu Sans';
       }
       .blance{
       	text-align: center;
       font-size: 12px;
+      margin-top: 2px;
       color: #707070;
+      font-family: 'Conv_BPG DejaVu Sans';
          span{
           margin-left: 3px;
           margin-right: 3px;
@@ -147,7 +151,8 @@ input:focus, button:focus{
 
   
    .nav-tabs{
-
+    
+      font-family: 'Conv_DejaVuSans';
    	 border: 0px;
    	 position: absolute;
    	 left: 50%;
@@ -236,7 +241,7 @@ input:focus, button:focus{
       font-size: 14px;
     }
     .point{
-    font-size: 12px;
+    font-size: 11px;
      font-family: 'Conv_DejaVuSans';
     }
          .avatar{
@@ -305,7 +310,7 @@ input:focus, button:focus{
          border-left: 1px solid #707070;
          border-top-left-radius: 10px;
          border-bottom-left-radius: 10px;
-
+          font-family: 'Conv_DejaVuSans';
          i{
           padding-left: 7px;
          }
@@ -319,11 +324,15 @@ input:focus, button:focus{
           width: 54px;
       padding-top: 30px;
       font-size: 10px;
+       .name{
+          overflow: hidden;
+          font-size: 10px;
+         }
        .avatar{
         position: absolute;
         left: 50%;
-
         transform: translate(-50%, -100%);
+        
        }
        .bolt{
         position: absolute;
@@ -506,6 +515,7 @@ input:focus, button:focus{
           border-top-right-radius: 0px;
           border-bottom-right-radius: 0px;
           width: 100%;
+        font-family: 'Conv_DejaVuSans';
 
         }
         button{
@@ -625,6 +635,7 @@ input:focus, button:focus{
          padding-top: 0px;
          margin-top: 70px;
          cursor: pointer;
+         font-family: 'Conv_DejaVuSans';
           &:hover{
             background: #3ff0f0;
           }
