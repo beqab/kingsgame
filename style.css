@@ -44,6 +44,42 @@ a:hover {
 input:focus, button:focus {
   outline: none; }
 
+  .pop  .gamer_info{
+      font-size: 14px;
+  }
+  .pop  .request{
+   border-bottom:2px solid #ccc;
+   padding-bottom: 4px;
+   padding-top: 4px;
+  }
+  .pop  button.btn_confirm{
+   background: #41a58c;
+  }
+  .pop  button{
+     font-size: 12px !important;
+    padding: 2px;
+    cursor: pointer;
+    background: #af5767;
+  }
+  .pop .avatar img{
+     border-radius: 50%;
+      margin-right: 10px;
+       display: inline-block;
+  }
+  .pop{
+    padding: 25px;
+    background: rgba(250, 250, 250, 0.8);
+    border: 1px solid #707070;
+    width: 300px;
+    margin: auto;
+    min-height: 20vw;
+    z-index: 2087789;
+    position: absolute;
+     left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
 aside.game_left_side {
   width: 347px;
   background: #fff;
